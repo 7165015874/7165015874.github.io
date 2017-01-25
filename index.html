@@ -7,29 +7,13 @@
         <link rel="stylesheet" href="lib/css/styles.css">
         <script src="vendor/jquery-3.1.0.min.js"></script>
         <script src="vendor/bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"></script>
+        <script> 
+            $(function(){
+            $("#navBar").load("text/navbar.html"); 
+            });
+    </script>
     </head>
     <body>
-        <marquee>
-            Text now and we will double the offer!
-        </marquee>
-        <article>
-            <header>
-                Five easy ways to live a better life
-            </header>
-            <ol>
-                <li>
-                    Stop worrying 
-                </li>
-                <li>
-                    There is no other way. I lied. 
-                </li>
-            </ol>
-        </article>
-        <p class="what-are-you-waiting-for">
-            What are you waiting for? Pick up your phone and text me now! 
-        </p>
-        <p class="do-not-call-me">
-            Dude seriously though. Do not call me. 
-        </p>
+        <div id="navBar"></div>
     </body>
 </html>
