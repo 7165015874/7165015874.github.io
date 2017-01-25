@@ -2,19 +2,34 @@ body {
     margin: 1em;
 }
 
-p {
-  animation-duration: 4s;
-  animation-name: slidein;
+.what-are-you-waiting-for {
+    animation-duration: 4s;
+    animation-name: slideinfromright;
 }
 
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%; 
-  }
+.do-not-call-me {
+    animation-duration: 4s;
+    animation-name: slideinfromleft;
+}
 
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
+@keyframes slideinfromright {
+    from {
+        margin-left: 100%;
+        width: 300%; 
+        }
+    to {
+        margin-left: 0%;
+        width: 100%;
+        }
+}
+
+@keyframes slideinfromleft {
+    from {
+        margin-left: 0%;
+        width: 100%;
+        }
+    to {
+        margin-left: 100%;
+        width: 300%; 
+        }
 }
