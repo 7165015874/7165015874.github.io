@@ -1,0 +1,137 @@
+body{
+  display: inline;
+  font-family: 'Lato', sans-serif;
+}
+
+
+
+input[type="text"]::-webkit-input-placeholder {
+  color: #00A5FA !important;
+}
+
+input[type="text"]:-moz-placeholder { /* Firefox 18- */
+  color: #00A5FA !important;
+}
+
+input[type="text"]::-moz-placeholder {  /* Firefox 19+ */
+  color: #00A5FA !important;
+}
+
+input[type="text"]:-ms-input-placeholder {
+  color: #00A5FA !important;
+}
+.form-control{
+  /*align-content: center;*/
+  font-family: 'Lato', sans-serif;
+  width:305px;
+  background-color:#F0F0F0;
+  border: 1px solid #DADADA;
+  padding-bottom: 3px;
+  border-radius: 2px;
+}
+.dwolla_heading{
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  margin-left: 160px;
+  margin-top: 70px;
+}
+.name{
+  font-family: 'Lato', sans-serif;
+}
+
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+.dropdown-content a{
+  width: 90px;
+  height: 11px;
+  font-family: Lato,"sans-serif";
+  font-size: 9px;
+  text-align: center;
+  line-height: 8px;
+  color: #4A4A4A;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+.learn_more:hover .dropdown-content {
+  display: block;
+}
+
+
+
+.dropdown-content2{
+  display: none;
+  position:absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content2 a{
+  width: 90px;
+  height: 6px;
+  font-family: Lato,"sans-serif";
+  font-size: 9px;
+  text-align: center;
+  line-height: 8px;
+  color: #4A4A4A;
+}
+.dropdown-content2 a:hover {
+  background-color: #f1f1f1
+}
+.use_lr:hover .dropdown-content2 {
+  display: block;
+}
+.dropdown_1{
+  position: relative;
+}
+#learn_more_bar {
+  width: 100px;
+  height: 2px;
+  background-color: #DC7552;
+  border: 1px solid #DC7552;
+  margin-left: -4px;
+}
+#learn_more_bar2{
+  width: 100px;
+  height: 2px;
+  background-color: #6F88EE;
+  border: 1px solid #6F88EE;
+}
+.nav {
+  display: inline-block;
+}
+.learn_more{
+  margin-left: 215px;
+  font-size: 14px;
+}
+.use_lr{
+  font-size: 14px;
+  margin-left: 580px;
+  display: inline-block;
+}
+.dropdown_1{
+  display: inline-block;
+}
+/*.learn_more,.use_lr{*/
+  /*position: absolute;*/
+/*}*/
+.learn_more,.use_lr,.logo,.logo{
+  position: absolute;
+}
+.logo{
+  margin: 0 auto;
+  margin-left: 170px;
+}
+/*.learn_more_sub_bar{*/
+  /*height: 10px;*/
+  /*width: 100px;*/
+  /*border:none;*/
+
+/*}*/

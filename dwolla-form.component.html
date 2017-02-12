@@ -1,0 +1,281 @@
+{{diagnostic}}
+<!--<div class="container">-->
+<div [hidden]="submitted">
+
+
+  <div class="dropdown_1">
+    <ul class="nav">
+      <li class="learn_more">
+        <h6>
+          LEARN MORE
+        </h6>
+        <div class="dropdown-content">
+          <div>
+            <a style="text-align: center;margin-left: 38px;font-family: 'Lato', 'sans-serif';font-size: 10px;" href="#">HOW A LIFT WORKS</a><br>
+            <hr style="height:4px;width:100px;border:none;color: #9B9B9D;background-color: #9B9B9D" id="learn_more_sub_bar" />
+            <a style="text-align: center;margin-left: 38px;font-family: 'Lato', 'sans-serif';font-size: 10px;" href="#">ABOUT LIFTROCKET</a><br>
+            <hr style="height:4px;width:100px;border:none;color: #9B9B9D;background-color: #9B9B9D" id="learn_more_sub_bar" />
+            <a style="text-align: center;margin-left: 25px;font-family: 'Lato', 'sans-serif';font-size: 10px;" href="#">OUR COMMUNNITY PAGE</a>
+            <hr style="height:4px;width:100px;border:none;color: #9B9B9D;background-color: #9B9B9D" id="learn_more_sub_bar" />
+          </div>
+        </div>
+        <hr id="learn_more_bar" /></li>
+      <div class="logo">
+      <img class="logo" src="LiftRocketLogo.png" width="200" height="40" alt="LiftRocket &trade; logo">
+      </div>
+
+      <li class="use_lr">
+        <h6>
+          USE LIFTROCKET
+        </h6>
+        <div class="dropdown-content2">
+          <div>
+            <a style="text-align: center;margin-left: 50px;font-family: 'Lato', 'sans-serif';font-size: 10px;" href="#">SIGN UP</a><br>
+            <hr style="height:4px;width:100px;border:none;color: #9B9B9D;background-color: #9B9B9D" id="learn_more_sub_bar" />
+            <a style="text-align: center;margin-left: 41px;font-family: 'Lato', 'sans-serif';font-size: 10px;" href="#">GET THE APP</a><br>
+            <hr style="height:4px;width:100px;border:none;color: #9B9B9D;background-color: #9B9B9D" id="learn_more_sub_bar" />
+            <a style="text-align: center;margin-left: 53px;font-family: 'Lato', 'sans-serif';font-size: 10px;" href="#">LOG IN</a>
+            <hr style="height:4px;width:100px;border:none;color: #9B9B9D;background-color: #9B9B9D" id="learn_more_sub_bar" />
+          </div>
+        </div>
+        <hr id="learn_more_bar2" /></li></ul>
+  </div>
+  <br>
+
+
+
+
+  <h1 class="dwolla_heading">Set up a payment account so you can receive and support Lifts </h1>
+
+  <form (ngSubmit)="onSubmit()" #dwollaForm="ngForm">
+
+    <div style="display: inline;" class="form-group">
+      <label class="name" style="margin-left: 130px;">Name</label><br>
+      <input type="text" class="form-control" id="firstName" placeholder="Legal First Name" required
+             style="width:295px; background-color:#F0F0F0;
+             border: 1px solid #DADADA;padding-bottom: 5px;
+             border-radius: 2px;display: inline;float: left;
+              margin-left: 130px; margin-right: 5px;"
+             [(ngModel)]="model.firstName" name="firstName" #name="ngModel">
+    </div>
+
+
+    <div class="form-group">
+      <input type="text" class="form-control" id="lastName" placeholder="Legal Last Name" required
+             style="width:295px; background-color:#F0F0F0;
+             border: 1px solid #DADADA;padding-bottom: 5px;
+             border-radius: 2px;display: inline-block; float: left;"
+             [(ngModel)]="model.lastName" name="lastName" #name="ngModel">
+    </div><br>
+
+
+
+
+
+
+
+
+    <div class="DOB">
+      <label class="dob" style="margin-left: 130px;margin-top: 8px;">Date of Birth</label><br>
+      <select style="margin-left: 130px; width: 200px;margin-right: 5px;height: 33px;" id="month" title="Month">
+        <option>Select a month</option>
+        <option>January</option>
+        <option>February</option>
+        <option>March</option>
+        <option>April</option>
+        <option>May</option>
+        <option>June</option>
+        <option>July</option>
+        <option>August</option>
+        <option>September</option>
+        <option>October</option>
+        <option>November</option>
+        <option>December</option>
+      </select>
+
+
+      <select id="date" style="display: inline;margin-right: 5px; width: 200px; height: 33px;">
+        <option>Select a date</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        <option>13</option>
+        <option>14</option>
+        <option>15</option>
+        <option>16</option>
+        <option>17</option>
+        <option>18</option>
+        <option>19</option>
+        <option>20</option>
+        <option>21</option>
+        <option>22</option>
+        <option>23</option>
+        <option>24</option>
+        <option>25</option>
+        <option>26</option>
+        <option>27</option>
+        <option>28</option>
+        <option>29</option>
+        <option>30</option>
+        <option>31</option>
+      </select>
+<div style="display: inline-block" class="form-group">
+      <input type="text" class="form-control" placeholder="Year" id="year" required
+             style=" background-color:#F0F0F0;
+             border: 1px solid #DADADA;
+             border-radius: 2px;display: inline-block; width: 176px;"
+             [(ngModel)]="model.birthYear" name="birthYear" #name="ngModel">
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="labels2" style="display: inline;">
+    <label class="name" style="display:inline-block;margin-left: 130px;">Number</label>
+    <label class="name" style="margin-left: 250px;display: inline;">Last 4 SSN</label><br>
+</div>
+    <div style="display: inline;" class="form-group">
+      <input type="text" class="form-control" id="mobileNumber" placeholder="Mobile Number" required
+             style="width:295px; background-color:#F0F0F0;
+              border: 1px solid #DADADA;padding-bottom: 5px;
+             border-radius: 2px;display: inline;float: left;
+              margin-left: 130px;margin-right: 5px;"
+             [(ngModel)]="model.mobileNumber" name="mobileNumber" #name="ngModel">
+    </div>
+
+
+    <div class="form-group">
+      <input type="text" class="form-control" id="lastFourSsn" placeholder="Last 4 SSN" required
+             style="width:295px; background-color:#F0F0F0;
+             border: 1px solid #DADADA;padding-bottom: 5px;
+             border-radius: 2px;"
+             [(ngModel)]="model.lastFourSsn" name="lastFourSsn" #name="ngModel">
+    </div>
+
+
+    <div class="form-group">
+      <label class="name" style="margin-left: 130px;">Address</label><br>
+      <input type="text" class="form-control" id="address" placeholder="Address" required
+             style="width:595px; background-color:#F0F0F0;
+             border: 1px solid #DADADA;padding-bottom: 5px;
+             margin-top: 0px;
+             border-radius: 2px;margin-left: 130px;display: inline;"
+             [(ngModel)]="model.address" name="address" #name="ngModel">
+    </div>
+
+
+    <div class="form-group">
+      <input type="text" class="form-control" id="zip" placeholder="Zip" required
+             style="width:185px; background-color:#F0F0F0;
+             border: 1px solid #DADADA;padding-bottom: 5px;
+             border-radius: 2px;display: inline;float: left;
+              margin-left: 130px;"
+             [(ngModel)]="model.zip" name="zip" #name="ngModel">
+    </div>
+
+
+    <div class="form-group">
+      <input type="text" class="form-control" id="city" placeholder="City" required
+             style="width:200px; background-color:#F0F0F0;
+             border: 1px solid #DADADA;padding-bottom: 5px;
+             border-radius: 2px;display: inline;float: left;
+              margin-left: 5px;margin-right: 5px;"
+             [(ngModel)]="model.city" name="city" #name="ngModel">
+    </div>
+
+
+    <div class="form-group">
+      <input type="text" class="form-control" id="state" placeholder="State"
+             required
+             style="width:200px; background-color:#F0F0F0;
+             border: 1px solid #DADADA;padding-bottom: 5px;
+             border-radius: 2px;"
+             [(ngModel)]="model.state" name="state" #name="ngModel">
+    </div>
+
+
+    <div style="display: inline;" class="form-group">
+      <label class="name" style="margin-left: 130px;">Pin</label><br>
+      <input type="text" class="form-control" id="pin" placeholder="Create Pin"
+             required
+             style="width:295px; background-color:#F0F0F0;
+             border: 1px solid #DADADA;padding-bottom: 5px;
+             border-radius: 2px;display: inline;float: left;
+              margin-left: 130px;margin-right: 5px;"
+             [(ngModel)]="model.pin" name="pin" #name="ngModel">
+
+
+
+    <div class="form-group">
+      <input type="text" class="form-control" id="confirmPin" placeholder="Confirm Pin"
+             required
+             style="width:296px; background-color:#F0F0F0;
+             border: 1px solid #DADADA;padding-bottom: 5px;
+             border-radius: 2px;"
+             [(ngModel)]="model.confirmPin" name="confirmPin" #name="ngModel">
+    </div>
+    </div>
+
+
+    <div style="display:inline;" class="form-group">
+      <label class="name" style="display:inline-block;margin-left: 130px;">Account</label><br>
+      <input type="text" class="form-control" id="accountNumber" placeholder="Account Number"
+             required
+             style="width:296px; background-color:#F0F0F0;
+             border: 1px solid #DADADA;padding-bottom: 5px;
+             border-radius: 2px;display: inline;float: left;
+              margin-left: 130px;margin-right: 5px;"
+             [(ngModel)]="model.accountNum" name="accountNum" #name="ngModel">
+
+
+
+    <div class="form-group">
+      <input type="text" class="form-control" id="routing"
+             placeholder="Routing Number" required
+             style="width:296px; background-color:#F0F0F0;
+             border: 1px solid #DADADA;padding-bottom: 5px;
+             border-radius: 2px;"
+             [(ngModel)]="model.routingNum" name="routingNum" #name="ngModel">
+    </div>
+    </div>
+
+
+
+
+<!--//Commented code-->
+
+    <div style="display: inline;" class="Terms">
+      <input style="margin-left:152px;  margin-right: 5px; display: inline; float: left;" class="checkbox" type="checkbox" value="checkbox1">
+      <h5 style="display: inline; margin-top:50px; font-family: 'Lato', 'sans-serif';" class="checkbox1">By Checking this box, I agree to Dwolla's <a href>Terms of Service</a> and<a href> Privacy policy.</a></h5>
+      <br>
+      <input class="checkbox_" type="checkbox" value="checkbox2" style="display: inline;margin-right:5px; margin-left: 152px; float: left;">
+      <h5 style="display: inline;font-family: 'Lato', 'sans-serif';" class="checkbox2">By Checking this box, I agree to LiftRocket &trade;'s <a href>Terms of Service</a> and <a href> Privacy policy.</a></h5>
+      <br>
+    </div>
+
+    <hr id="submit_bar">
+
+
+
+
+    <button routerLink="/donation" type="submit" class="btn btn-default" [disabled]="!dwollaForm.form.valid" id="submit_dwolla"style="margin-left:380px;margin-bottom: 30px; color:#DC7552">SIGN UP</button><br>
+
+  </form>
+</div>
