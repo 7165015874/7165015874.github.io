@@ -110,6 +110,34 @@ textarea {
 }
 
 
+html,
+body {
+  height: 100%;
+}
+
+body {
+  -webkit-animation: background 5s cubic-bezier(1,0,0,1) infinite;
+  animation: background 5s cubic-bezier(1,0,0,1) infinite;  
+}
+
+
+@-webkit-keyframes background {
+  0% { background-color: #ECEFF1; }
+  33% { background-color: #607D8B; }  
+  67% { background-color: #263238; }
+  100% { background-color: #ECEFF1; }
+}
+
+@keyframes background {
+  0% { background-color: #ECEFF1; }
+  33% { background-color: #607D8B; }  
+  67% { background-color: #263238; }
+  100% { background-color: #ECEFF1; }
+}
+
+
+
+
  ==========================================================================
    Helper classes
    ========================================================================== */
