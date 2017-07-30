@@ -122,17 +122,17 @@ body {
 
 
 @-webkit-keyframes background {
-  0% { background-color: #ECEFF1; }
-  33% { background-color: #607D8B; }  
-  67% { background-color: #263238; }
-  100% { background-color: #ECEFF1; }
+  0% { background-color: #263238; }
+  33% { background-color: #3E2723; }  
+  67% { background-color: #212121; }
+  100% { background-color: #263238; }
 }
 
 @keyframes background {
-  0% { background-color: #ECEFF1; }
-  33% { background-color: #607D8B; }  
-  67% { background-color: #263238; }
-  100% { background-color: #ECEFF1; }
+  0% { background-color: #263238; }
+  33% { background-color: #3E2723; }  
+  67% { background-color: #212121; }
+  100% { background-color: #263238; }
 }
 
 
