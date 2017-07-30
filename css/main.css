@@ -95,24 +95,8 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-.article-wrapper {
-	padding: 30px;
-	text-align: center;
-}
-
-.centered-article {
-	display: inline-block;
-	padding: 50px;
-}
-
 .snap-code {
 	width: 100%;
-}
-
-
-html,
-body {
-  height: 100%;
 }
 
 body {
