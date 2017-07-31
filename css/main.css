@@ -113,8 +113,13 @@ body {
   100% { background-color: #263238; }
 }
 
-
-
+.snap-wrapper {
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   max-width: 80%;
+   max-height: 80%;
+}
 
  ==========================================================================
    Helper classes
